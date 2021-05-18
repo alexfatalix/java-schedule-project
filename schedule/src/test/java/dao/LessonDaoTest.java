@@ -26,7 +26,7 @@ public class LessonDaoTest extends DataSourceBasedDBTestCase {
         Lesson lesson = dao.findById(Long.valueOf(1L));
         assertNotNull(lesson);
         assertEquals(Long.valueOf(1L), lesson.getId());
-        assertEquals("SKU001", lesson.getSku());
+        assertEquals("SKU_lesson_1", lesson.getSku());
     }
     
     public void testFindByIdNull() {

@@ -26,7 +26,7 @@ public class StudentDaoTest extends DataSourceBasedDBTestCase {
         Student student = dao.findById(Long.valueOf(1L));
         assertNotNull(student);
         assertEquals(Long.valueOf(1L), student.getId());
-        assertEquals("Vlados", student.getName());
+        assertEquals("Dimas", student.getName());
     }
     public void testFindByIdNull() {
         JdbcGenericDao<Student> dao = new StudentDao(getDataSource());
