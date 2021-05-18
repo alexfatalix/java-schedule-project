@@ -30,7 +30,7 @@ public class LessonDaoTest extends DataSourceBasedDBTestCase {
     }
     
     public void testFindByIdNull() {
-        Lesson lesson = dao.findById(Long.valueOf(2L));
+        Lesson lesson = dao.findById(Long.valueOf(5L));
         assertNull(lesson);
     }
 
@@ -43,7 +43,7 @@ public class LessonDaoTest extends DataSourceBasedDBTestCase {
         assertNotNull(lesson);
         assertNotNull(lesson.getId());
         
-        assertEquals(2, getConnection().createDataSet().getTable("lesson").getRowCount());
+        assertEquals(5, getConnection().createDataSet().getTable("lesson").getRowCount());
     }
 
     @Override

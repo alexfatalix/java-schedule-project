@@ -30,7 +30,7 @@ public class StudentDaoTest extends DataSourceBasedDBTestCase {
     }
     public void testFindByIdNull() {
         JdbcGenericDao<Student> dao = new StudentDao(getDataSource());
-        Student student = dao.findById(Long.valueOf(2L));
+        Student student = dao.findById(Long.valueOf(5L));
         assertNull(student);
     }
 
@@ -44,7 +44,7 @@ public class StudentDaoTest extends DataSourceBasedDBTestCase {
         assertNotNull(student);
         assertNotNull(student.getId());
         
-        assertEquals(2, getConnection().createDataSet().getTable("student").getRowCount());
+        assertEquals(5, getConnection().createDataSet().getTable("student").getRowCount());
     }
 
     @Override
