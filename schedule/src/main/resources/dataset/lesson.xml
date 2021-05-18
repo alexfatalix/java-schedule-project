@@ -1,3 +1,6 @@
 <dataset>
     <lesson id="1" sku="SKU001"/>
+    <lesson id="2" sku="SKU002"/>
+    <lesson id="3" sku="SKU003"/>
+    <lesson id="4" sku="SKU004"/>
 </dataset>
